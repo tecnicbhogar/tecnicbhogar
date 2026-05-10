@@ -3,7 +3,7 @@ import heroImg from "@/assets/hero.jpg";
 import valenciaImg from "@/assets/valencia.jpg";
 import { SERVICES, SITE } from "@/lib/site";
 import { ServiceImage } from "@/components/service-image";
-import { ArrowRight, BadgeCheck, Clock, ShieldCheck, Sparkles, Wrench } from "lucide-react";
+import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldCheck, Sparkles, Wrench } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -128,6 +128,71 @@ function Index() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* PROCESO */}
+      <section className="mx-auto max-w-7xl px-4 py-20 md:px-8">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Cómo trabajamos</p>
+          <h2 className="mt-2 font-display text-4xl md:text-5xl">Tres pasos y tu avería resuelta.</h2>
+          <p className="mt-4 text-muted-foreground">Un proceso transparente, sin sorpresas y pensado para que recuperes tu electrodoméstico cuanto antes.</p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {[
+            {
+              n: "01",
+              i: PhoneCall,
+              t: "Atención del aviso",
+              d: "Llámanos o escríbenos por WhatsApp. Nuestro equipo recoge los datos de tu avería y la traslada al técnico de tu zona en cuestión de minutos.",
+            },
+            {
+              n: "02",
+              i: ClipboardCheck,
+              t: "Diagnóstico y presupuesto",
+              d: "Acudimos a tu domicilio, revisamos el aparato y te entregamos un presupuesto cerrado y por escrito. Sin compromiso ni cargos ocultos.",
+            },
+            {
+              n: "03",
+              i: Wrench,
+              t: "Reparación garantizada",
+              d: "Una vez aprobado el presupuesto, nuestros técnicos comienzan el trabajo lo antes posible y dejan tu electrodoméstico con garantía por escrito.",
+            },
+          ].map(({ n, i: Icon, t, d }) => (
+            <div key={n} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-soft transition hover:shadow-elegant">
+              <span className="pointer-events-none absolute -right-4 -top-6 font-display text-[7rem] leading-none text-primary/10">{n}</span>
+              <span className="relative grid h-12 w-12 place-items-center rounded-2xl bg-gradient-warm text-primary-foreground shadow-elegant">
+                <Icon className="h-5 w-5" />
+              </span>
+              <h3 className="relative mt-6 font-display text-2xl">{t}</h3>
+              <p className="relative mt-3 text-sm text-muted-foreground">{d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* MULTIMARCA + AVISO LEGAL */}
+      <section className="mx-auto max-w-7xl px-4 pb-10 md:px-8">
+        <div className="grid gap-6 rounded-3xl bg-gradient-cream p-8 md:grid-cols-5 md:p-12">
+          <div className="md:col-span-3">
+            <span className="inline-flex items-center gap-2 rounded-full bg-card px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary shadow-soft">
+              <BadgeCheck className="h-3.5 w-3.5" /> Expertos multimarca
+            </span>
+            <h2 className="mt-4 font-display text-3xl md:text-4xl">Reparamos todas las marcas del mercado.</h2>
+            <p className="mt-4 text-muted-foreground">
+              Somos un servicio técnico independiente y especializado en <strong>multimarca</strong>: Bosch, Balay, Siemens, LG, Samsung, Whirlpool, AEG, Beko, Teka, Fagor, Smeg, Junkers, Ariston, Vaillant y muchas más. Nuestra polivalencia nos permite intervenir el mismo día sin depender de fabricantes.
+            </p>
+          </div>
+          <aside className="md:col-span-2 rounded-2xl border border-border bg-card p-6 text-sm shadow-soft">
+            <div className="flex items-center gap-2 text-primary">
+              <Info className="h-4 w-4" />
+              <p className="text-xs font-semibold uppercase tracking-wider">Aviso legal</p>
+            </div>
+            <p className="mt-3 text-muted-foreground">
+              <strong>TecniCB Hogar</strong> es un servicio técnico independiente y <strong>no es el servicio técnico oficial</strong> de ninguna de las marcas mencionadas. Este sitio web no mantiene vinculación alguna con dichos fabricantes. Todas las marcas pertenecen a sus respectivos propietarios y se citan únicamente con fines informativos, al amparo de los <em>arts. 32 y 33 de la Ley de Propiedad Intelectual</em>.
+            </p>
+          </aside>
         </div>
       </section>
 
