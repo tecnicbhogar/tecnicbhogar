@@ -11,7 +11,7 @@ export function SiteHeader() {
             <Wrench className="h-4 w-4" />
           </span>
           <span className="font-display text-lg font-semibold tracking-tight">
-            ReparaHogar <span className="text-primary">Valencia</span>
+            TecniCB <span className="text-primary">Hogar</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-7 text-sm font-medium md:flex">

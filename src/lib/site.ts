@@ -1,11 +1,11 @@
 export const SITE = {
-  name: "ReparaHogar Valencia",
-  phone: "+34 600 123 456",
-  phoneHref: "tel:+34600123456",
-  whatsappNumber: "34600123456",
-  whatsappHref: "https://wa.me/34600123456?text=Hola%2C%20necesito%20reparar%20un%20electrodom%C3%A9stico",
-  email: "info@reparahogarvalencia.es",
-  area: "Valencia y alrededores",
+  name: "TecniCB Hogar",
+  phone: "+34 641 897 997",
+  phoneHref: "tel:+34641897997",
+  whatsappNumber: "34641897997",
+  whatsappHref: "https://wa.me/34641897997?text=Hola%2C%20necesito%20reparar%20un%20electrodom%C3%A9stico",
+  email: "info@tecnicbhogar.es",
+  area: "Valencia y alrededores (radio 40 km, incluido Xàtiva)",
 };
 
 export const SERVICES = [

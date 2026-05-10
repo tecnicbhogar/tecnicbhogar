@@ -52,11 +52,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ReparaHogar Valencia · Reparación de electrodomésticos" },
-      { name: "description", content: "Servicio técnico de electrodomésticos en Valencia y alrededores: lavadoras, frigoríficos, hornos, cocinas, termos y más. Presupuesto gratis." },
-      { name: "author", content: "ReparaHogar Valencia" },
-      { property: "og:title", content: "ReparaHogar Valencia · Reparación de electrodomésticos" },
-      { property: "og:description", content: "Reparamos lavadoras, lavavajillas, frigoríficos, hornos, cocinas y termos en Valencia. Rápido y con garantía." },
+      { title: "TecniCB Hogar · Reparación de electrodomésticos en Valencia" },
+      { name: "description", content: "Servicio técnico TecniCB Hogar en Valencia y alrededores (radio 40 km, incluido Xàtiva): lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis." },
+      { name: "author", content: "TecniCB Hogar" },
+      { property: "og:title", content: "TecniCB Hogar · Reparación de electrodomésticos en Valencia" },
+      { property: "og:description", content: "Reparamos lavadoras, lavavajillas, frigoríficos, hornos, cocinas y termos en Valencia y alrededores (40 km, incluido Xàtiva)." },
       { property: "og:type", content: "website" },
     ],
     links: [
