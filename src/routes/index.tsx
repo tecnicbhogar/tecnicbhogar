@@ -148,28 +148,39 @@ function Index() {
               n: "01",
               i: PhoneCall,
               t: "Atención del aviso",
-              d: "Llámanos o escríbenos por WhatsApp. Nuestro equipo recoge los datos de tu avería y la traslada al técnico de tu zona en cuestión de minutos.",
+              d: "Llámanos o escríbenos por WhatsApp. Nuestro equipo de teleoperadores recoge los datos de tu avería y la traslada al técnico de tu zona en cuestión de minutos.",
+              img: pasoAvisoImg,
+              alt: "Teleoperadora atendiendo una llamada",
             },
             {
               n: "02",
               i: ClipboardCheck,
               t: "Diagnóstico y presupuesto",
               d: "Acudimos a tu domicilio, revisamos el aparato y te entregamos un presupuesto cerrado y por escrito. Sin compromiso ni cargos ocultos.",
+              img: pasoPresupuestoImg,
+              alt: "Técnico revisando una lavadora y elaborando presupuesto",
             },
             {
               n: "03",
               i: Wrench,
               t: "Reparación garantizada",
-              d: "Una vez aprobado el presupuesto, nuestros técnicos comienzan el trabajo lo antes posible y dejan tu electrodoméstico con garantía por escrito.",
+              d: "Una vez aprobado el presupuesto, nuestros técnicos comienzan el trabajo lo antes posible y dejan tu electrodoméstico funcionando con garantía por escrito.",
+              img: pasoReparacionImg,
+              alt: "Técnico reparando un electrodoméstico",
             },
-          ].map(({ n, i: Icon, t, d }) => (
-            <div key={n} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-soft transition hover:shadow-elegant">
-              <span className="pointer-events-none absolute -right-4 -top-6 font-display text-[7rem] leading-none text-primary/10">{n}</span>
-              <span className="relative grid h-12 w-12 place-items-center rounded-2xl bg-gradient-warm text-primary-foreground shadow-elegant">
-                <Icon className="h-5 w-5" />
-              </span>
-              <h3 className="relative mt-6 font-display text-2xl">{t}</h3>
-              <p className="relative mt-3 text-sm text-muted-foreground">{d}</p>
+          ].map(({ n, i: Icon, t, d, img, alt }) => (
+            <div key={n} className="group relative overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:shadow-elegant">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img src={img} alt={alt} loading="lazy" width={1024} height={768} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+                <span className="absolute left-4 top-4 rounded-full bg-background/90 px-3 py-1 font-display text-sm font-semibold text-primary shadow-soft backdrop-blur">Paso {n}</span>
+                <span className="absolute -bottom-5 right-5 grid h-12 w-12 place-items-center rounded-2xl bg-gradient-warm text-primary-foreground shadow-elegant ring-4 ring-card">
+                  <Icon className="h-5 w-5" />
+                </span>
+              </div>
+              <div className="p-7 pt-8">
+                <h3 className="font-display text-2xl">{t}</h3>
+                <p className="mt-3 text-sm text-muted-foreground">{d}</p>
+              </div>
             </div>
           ))}
         </div>
