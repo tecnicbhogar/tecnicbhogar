@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border bg-foreground text-background">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-4 md:px-8">
         <div>
-          <h3 className="font-display text-2xl">ReparaHogar Valencia</h3>
+          <h3 className="font-display text-2xl">TecniCB Hogar</h3>
           <p className="mt-3 text-sm opacity-70">Servicio técnico de electrodomésticos rápido, garantizado y de proximidad en {SITE.area}.</p>
         </div>
         <div>
@@ -39,7 +39,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-background/10 py-5 text-center text-xs opacity-60">
-        © {new Date().getFullYear()} ReparaHogar Valencia · Todos los derechos reservados
+        © {new Date().getFullYear()} TecniCB Hogar · Todos los derechos reservados
       </div>
     </footer>
   );
