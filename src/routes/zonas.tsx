@@ -43,25 +43,17 @@ function Zonas() {
         <div className="overflow-hidden rounded-3xl border border-border shadow-soft">
           <iframe
             title="Área de cobertura TecniCB Hogar - Valencia y 40 km a la redonda incluido Xàtiva"
-            src="https://www.google.com/maps/d/embed?mid=1n_jE3VQqgJrK0p_5VkS9OqL3rJv5x4Q&hl=es"
-            width="100%"
-            height="450"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="block w-full"
-          />
-        </div>
-        <div className="mt-4 overflow-hidden rounded-3xl border border-border shadow-soft">
-          <iframe
-            title="Mapa Valencia"
             src="https://www.google.com/maps?q=Valencia,+Spain&hl=es&z=9&output=embed"
             width="100%"
-            height="420"
+            height="500"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="block w-full"
           />
         </div>
+        <p className="mt-3 text-center text-xs text-muted-foreground">
+          Cubrimos un radio aproximado de 40 km desde Valencia capital, llegando hasta Xàtiva, Sagunt, Llíria y Cullera.
+        </p>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-10 md:px-8">
