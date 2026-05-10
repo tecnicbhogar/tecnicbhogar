@@ -38,8 +38,11 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-background/10 py-5 text-center text-xs opacity-60">
-        © {new Date().getFullYear()} TecniCB Hogar · Todos los derechos reservados
+      <div className="border-t border-background/10 px-4 py-6 text-center text-xs opacity-60 md:px-8">
+        <p className="mx-auto max-w-4xl">
+          TecniCB Hogar es un servicio técnico independiente y multimarca. <strong>No somos el servicio técnico oficial</strong> de ninguna de las marcas mencionadas, ni mantenemos vinculación con ellas. Las marcas pertenecen a sus respectivos propietarios y se citan al amparo de los arts. 32 y 33 LPI.
+        </p>
+        <p className="mt-3">© {new Date().getFullYear()} TecniCB Hogar · Todos los derechos reservados</p>
       </div>
     </footer>
   );
