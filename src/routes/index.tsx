@@ -3,7 +3,7 @@ import heroImg from "@/assets/hero.jpg";
 import valenciaImg from "@/assets/valencia.jpg";
 import { SERVICES, SITE } from "@/lib/site";
 import { ServiceImage } from "@/components/service-image";
-import { ArrowRight, BadgeCheck, Clock, ShieldCheck, Sparkles, Wrench } from "lucide-react";
+import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldCheck, Sparkles, Wrench } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
