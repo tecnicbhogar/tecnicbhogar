@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
 import valenciaImg from "@/assets/valencia.jpg";
+import pasoAvisoImg from "@/assets/paso-aviso.jpg";
+import pasoPresupuestoImg from "@/assets/paso-presupuesto.jpg";
+import pasoReparacionImg from "@/assets/paso-reparacion.jpg";
 import { SERVICES, SITE } from "@/lib/site";
 import { ServiceImage } from "@/components/service-image";
 import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldCheck, Sparkles, Wrench } from "lucide-react";
