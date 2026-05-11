@@ -11,8 +11,10 @@ import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldC
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Reparación de electrodomésticos en Valencia · ReparaHogar" },
-      { name: "description", content: "Servicio técnico a domicilio en Valencia y alrededores. Lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis y garantía." },
+      { title: "Reparación de electrodomésticos en Valencia | TecniCB Hogar" },
+      { name: "description", content: "Servicio técnico a domicilio en Valencia y alrededores (40 km, incluido Xàtiva). Reparamos lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis." },
+      { property: "og:title", content: "Reparación de electrodomésticos en Valencia | TecniCB Hogar" },
+      { property: "og:description", content: "Técnicos a domicilio en Valencia y alrededores. Lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis y garantía escrita." },
     ],
   }),
   component: Index,
