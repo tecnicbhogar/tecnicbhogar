@@ -35,6 +35,11 @@ const COPY: Record<string, { intro: string; bullets: string[]; brands: string[] 
     bullets: ["No sale agua caliente", "Salta el térmico", "Goteos en el termo", "Calentador con fallo de encendido", "Cambio de resistencia y ánodo"],
     brands: ["Junkers", "Cointra", "Saunier Duval", "Ariston", "Vaillant", "Bosch"],
   },
+  "aire-acondicionado": {
+    intro: "Mantenimiento, limpieza y reparación de aire acondicionado split, multisplit y conductos en Valencia. Recarga de gas, limpieza de filtros y unidades, revisión de fugas y puesta a punto antes del verano.",
+    bullets: ["Mantenimiento anual y limpieza profunda", "Recarga y detección de fugas de gas", "No enfría o no calienta", "Goteos en la unidad interior", "Ruidos, malos olores o error en el mando"],
+    brands: ["Daikin", "Mitsubishi", "Fujitsu", "LG", "Samsung", "Panasonic", "Hisense", "Hitachi"],
+  },
 };
 
 export const Route = createFileRoute("/servicios/$slug")({
