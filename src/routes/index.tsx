@@ -11,10 +11,19 @@ import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldC
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Reparación de electrodomésticos en Valencia | TecniCB Hogar" },
-      { name: "description", content: "Servicio técnico a domicilio en Valencia y alrededores (40 km, incluido Xàtiva). Reparamos lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis." },
-      { property: "og:title", content: "Reparación de electrodomésticos en Valencia | TecniCB Hogar" },
-      { property: "og:description", content: "Técnicos a domicilio en Valencia y alrededores. Lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis y garantía escrita." },
+      { title: "Reparación de Electrodomésticos en Valencia a Domicilio | TecniCB Hogar" },
+      { name: "description", content: "Reparación de electrodomésticos en Valencia y alrededores: lavadoras, frigoríficos, lavavajillas, hornos, cocinas y termos. Servicio técnico a domicilio en 24h, presupuesto gratis y garantía por escrito. Llámanos." },
+      { name: "keywords", content: "reparación electrodomésticos Valencia, servicio técnico Valencia, reparar lavadora Valencia, reparar frigorífico Valencia, reparar lavavajillas Valencia, reparar horno Valencia, técnico electrodomésticos a domicilio Valencia, Xàtiva, Torrent, Paterna, Mislata, Burjassot, Manises, Alboraya, Catarroja, Aldaia" },
+      { name: "robots", content: "index, follow" },
+      { name: "geo.region", content: "ES-V" },
+      { name: "geo.placename", content: "Valencia" },
+      { property: "og:title", content: "Reparación de Electrodomésticos en Valencia a Domicilio | TecniCB Hogar" },
+      { property: "og:description", content: "Servicio técnico a domicilio en Valencia y alrededores (radio 40 km, incluido Xàtiva). Lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis y garantía escrita." },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "es_ES" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Reparación de Electrodomésticos en Valencia | TecniCB Hogar" },
+      { name: "twitter:description", content: "Servicio técnico a domicilio en Valencia y alrededores. Presupuesto gratis y garantía escrita." },
     ],
   }),
   component: Index,
