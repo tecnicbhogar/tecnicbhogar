@@ -55,7 +55,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "TecniCB Hogar · Reparación de electrodomésticos en Valencia" },
       { name: "description", content: "Servicio técnico TecniCB Hogar en Valencia y alrededores (radio 40 km, incluido Xàtiva): lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis." },
       { name: "author", content: "TecniCB Hogar" },
-      { name: "google-site-verification", content: "googlef7f0993698ac9423.html" },
+      { name: "google-site-verification", content: "googlef7f0993698ac9423" },
       { property: "og:title", content: "TecniCB Hogar · Reparación de electrodomésticos en Valencia" },
       { property: "og:description", content: "Servicio técnico TecniCB Hogar en Valencia y alrededores (radio 40 km, incluido Xàtiva): lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis." },
       { property: "og:type", content: "website" },
