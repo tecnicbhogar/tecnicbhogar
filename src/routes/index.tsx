@@ -11,10 +11,19 @@ import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldC
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Reparación de electrodomésticos en Valencia | TecniCB Hogar" },
-      { name: "description", content: "Servicio técnico a domicilio en Valencia y alrededores (40 km, incluido Xàtiva). Reparamos lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis." },
-      { property: "og:title", content: "Reparación de electrodomésticos en Valencia | TecniCB Hogar" },
-      { property: "og:description", content: "Técnicos a domicilio en Valencia y alrededores. Lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis y garantía escrita." },
+      { title: "Reparación de Electrodomésticos en Valencia a Domicilio | TecniCB Hogar" },
+      { name: "description", content: "Reparación de electrodomésticos en Valencia y alrededores: lavadoras, frigoríficos, lavavajillas, hornos, cocinas y termos. Servicio técnico a domicilio en 24h, presupuesto gratis y garantía por escrito. Llámanos." },
+      { name: "keywords", content: "reparación electrodomésticos Valencia, servicio técnico Valencia, reparar lavadora Valencia, reparar frigorífico Valencia, reparar lavavajillas Valencia, reparar horno Valencia, técnico electrodomésticos a domicilio Valencia, Xàtiva, Torrent, Paterna, Mislata, Burjassot, Manises, Alboraya, Catarroja, Aldaia" },
+      { name: "robots", content: "index, follow" },
+      { name: "geo.region", content: "ES-V" },
+      { name: "geo.placename", content: "Valencia" },
+      { property: "og:title", content: "Reparación de Electrodomésticos en Valencia a Domicilio | TecniCB Hogar" },
+      { property: "og:description", content: "Servicio técnico a domicilio en Valencia y alrededores (radio 40 km, incluido Xàtiva). Lavadoras, frigoríficos, hornos, cocinas y termos. Presupuesto gratis y garantía escrita." },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "es_ES" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Reparación de Electrodomésticos en Valencia | TecniCB Hogar" },
+      { name: "twitter:description", content: "Servicio técnico a domicilio en Valencia y alrededores. Presupuesto gratis y garantía escrita." },
     ],
   }),
   component: Index,
@@ -29,15 +38,14 @@ function Index() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 pb-20 pt-12 md:grid-cols-12 md:px-8 md:pt-20">
           <div className="md:col-span-6 md:pt-10">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-              <Sparkles className="h-3.5 w-3.5 text-primary" /> Servicio técnico en {SITE.area}
+              <Sparkles className="h-3.5 w-3.5 text-primary" /> Servicio técnico de electrodomésticos en {SITE.area}
             </span>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-balance md:text-7xl">
-              Tu electrodoméstico,
-              <span className="block bg-gradient-warm bg-clip-text text-transparent">como nuevo hoy.</span>
+              Reparación de electrodomésticos en
+              <span className="block bg-gradient-warm bg-clip-text text-transparent">Valencia, hoy mismo.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Reparamos lavadoras, lavavajillas, frigoríficos, hornos, cocinas, termos y calentadores
-              en toda Valencia. Presupuesto gratis, sin compromiso y con garantía escrita.
+              Servicio técnico a domicilio en <strong>Valencia y alrededores</strong>: reparamos lavadoras, lavavajillas, frigoríficos, hornos, cocinas, termos y calentadores de todas las marcas. <strong>Presupuesto gratis</strong>, sin compromiso y con <strong>garantía escrita</strong>.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contacto" className="inline-flex items-center gap-2 rounded-full bg-gradient-warm px-6 py-3.5 font-semibold text-primary-foreground shadow-elegant transition hover:translate-y-[-1px]">
