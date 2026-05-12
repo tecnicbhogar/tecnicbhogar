@@ -221,13 +221,43 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
         type="submit"
         className="mt-2 inline-flex items-center justify-center rounded-full bg-gradient-warm px-6 py-3.5 font-semibold text-primary-foreground shadow-elegant transition hover:translate-y-[-1px]"
       >
-        Enviar por WhatsApp
+        {preview ? "Actualizar vista previa" : "Revisar mensaje"}
       </button>
 
-      {sent && (
-        <p className="text-center text-sm text-[var(--color-whatsapp)]">
-          ¡Hemos abierto WhatsApp con tu solicitud lista para enviar!
-        </p>
+      {preview && (
+        <div className="mt-2 grid gap-3 rounded-2xl border border-border bg-muted/40 p-4">
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-sm font-semibold">Vista previa del mensaje</span>
+            <span className="text-xs text-muted-foreground">Revisa antes de enviar</span>
+          </div>
+          <textarea
+            value={preview}
+            onChange={(e) => setPreview(e.target.value)}
+            rows={12}
+            className="w-full rounded-xl border border-input bg-background px-4 py-3 font-mono text-xs leading-relaxed outline-none focus:border-primary"
+          />
+          <div className="flex flex-col gap-2 sm:flex-row">
+            <button
+              type="button"
+              onClick={openWhatsapp}
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[var(--color-whatsapp)] px-6 py-3 font-semibold text-white shadow-elegant transition hover:opacity-90"
+            >
+              Abrir WhatsApp y enviar
+            </button>
+            <button
+              type="button"
+              onClick={() => { setPreview(null); setSent(false); }}
+              className="inline-flex items-center justify-center rounded-full border border-border bg-background px-6 py-3 font-semibold transition hover:bg-muted"
+            >
+              Editar datos
+            </button>
+          </div>
+          {sent && (
+            <p className="text-center text-sm text-[var(--color-whatsapp)]">
+              ¡Hemos abierto WhatsApp con tu solicitud lista para enviar!
+            </p>
+          )}
+        </div>
       )}
     </form>
   );
