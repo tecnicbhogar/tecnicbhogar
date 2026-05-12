@@ -94,7 +94,7 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
       setErrors(fieldErrors);
       return;
     }
-    setPreview(buildMessage(result.data));
+    setPreview(buildMessage({ ...result.data, brand: result.data.brand ?? "" }));
     setSent(false);
   }
 
