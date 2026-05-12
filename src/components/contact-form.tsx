@@ -49,8 +49,23 @@ type FormState = {
   fault: string;
 };
 
+function buildMessage(d: FormState) {
+  return (
+    `Hola TecniCB Hogar 👋, solicito una reparación.\n\n` +
+    `• Nombre: ${d.name}\n` +
+    `• Teléfono: ${d.phone}\n` +
+    `• Aparato: ${d.appliance}\n` +
+    `• Marca: ${d.brand || "No indicada"}\n` +
+    `• Antigüedad: ${d.age}\n` +
+    `• Zona: ${d.zone}\n` +
+    `• Avería: ${d.fault}\n\n` +
+    `Quedo a la espera de horario de visita. Gracias.`
+  );
+}
+
 export function ContactForm({ defaultService }: { defaultService?: string }) {
   const [sent, setSent] = useState(false);
+  const [preview, setPreview] = useState<string | null>(null);
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [form, setForm] = useState<FormState>({
     name: "",
@@ -79,18 +94,13 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
       setErrors(fieldErrors);
       return;
     }
-    const d = result.data;
-    const message =
-      `Hola TecniCB Hogar 👋, solicito una reparación.\n\n` +
-      `• Nombre: ${d.name}\n` +
-      `• Teléfono: ${d.phone}\n` +
-      `• Aparato: ${d.appliance}\n` +
-      `• Marca: ${d.brand || "No indicada"}\n` +
-      `• Antigüedad: ${d.age}\n` +
-      `• Zona: ${d.zone}\n` +
-      `• Avería: ${d.fault}\n\n` +
-      `Quedo a la espera de horario de visita. Gracias.`;
-    const url = `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    setPreview(buildMessage(result.data));
+    setSent(false);
+  }
+
+  function openWhatsapp() {
+    if (!preview) return;
+    const url = `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(preview)}`;
     window.open(url, "_blank", "noopener");
     setSent(true);
   }
