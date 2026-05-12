@@ -111,7 +111,7 @@ function Index() {
               <span className="block bg-gradient-warm bg-clip-text text-transparent">Valencia, hoy mismo.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Servicio técnico a domicilio en <strong>Valencia y alrededores</strong>: reparamos lavadoras, lavavajillas, frigoríficos, hornos, cocinas, termos y calentadores de todas las marcas. <strong>Presupuesto gratis</strong>, sin compromiso y con <strong>garantía escrita</strong>.
+              Servicio técnico a domicilio en <strong>Valencia y alrededores</strong>: reparamos lavadoras, lavavajillas, frigoríficos, hornos, cocinas, termos y calentadores de todas las marcas. <strong>Presupuesto gratis en caso de aceptar la reparación</strong>, sin compromiso y con <strong>garantía escrita</strong>.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contacto" className="inline-flex items-center gap-2 rounded-full bg-gradient-warm px-6 py-3.5 font-semibold text-primary-foreground shadow-elegant transition hover:translate-y-[-1px]">
