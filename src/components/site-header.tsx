@@ -3,24 +3,54 @@ import { Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
 
 function BrandMark({ className }: { className?: string }) {
-  // Unique mark: rounded appliance front (door + dial) crossed by a wrench head,
-  // forming a stylised "C" of TecniCB. Drawn with strokes for a hand-crafted feel.
+  // Bold mark: warm shield (trust + service) with a wrench crossing a lightning
+  // bolt (repair + electrodomésticos). Distinctive at small sizes.
   return (
-    <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
+    <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
       <defs>
         <linearGradient id="brand-warm" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="hsl(18 92% 58%)" />
-          <stop offset="100%" stopColor="hsl(36 96% 56%)" />
+          <stop offset="0%" stopColor="hsl(14 95% 55%)" />
+          <stop offset="55%" stopColor="hsl(24 96% 56%)" />
+          <stop offset="100%" stopColor="hsl(40 98% 58%)" />
+        </linearGradient>
+        <linearGradient id="brand-steel" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="hsl(0 0% 100%)" />
+          <stop offset="100%" stopColor="hsl(210 16% 88%)" />
         </linearGradient>
       </defs>
-      {/* appliance body */}
-      <rect x="5" y="5" width="30" height="30" rx="9" fill="url(#brand-warm)" />
-      {/* drum / dial */}
-      <circle cx="20" cy="21" r="7.5" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeDasharray="32 8" transform="rotate(-25 20 21)" />
-      {/* inner spark / power dot */}
-      <circle cx="20" cy="21" r="2.2" fill="white" />
-      {/* wrench notch on top — opens the C */}
-      <path d="M14 9.5 L20 9.5 L22.5 6.5 L26 6.5 L24 10 L26 13.5 L22.5 13.5 L20 10.5 L14 10.5 Z" fill="hsl(20 14% 14%)" />
+      {/* Shield */}
+      <path
+        d="M24 2.5 L42 8 V23 C42 34.5 34.2 42.5 24 45.5 C13.8 42.5 6 34.5 6 23 V8 Z"
+        fill="url(#brand-warm)"
+        stroke="hsl(20 14% 14%)"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      {/* Lightning bolt — power / electricidad */}
+      <path
+        d="M27 11 L16 26 H23 L21 37 L33 21 H26 Z"
+        fill="hsl(48 100% 62%)"
+        stroke="hsl(20 14% 14%)"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      {/* Wrench — reparación, crossing the bolt diagonally */}
+      <g transform="rotate(38 24 24)">
+        <path
+          d="M11 22 h18 a3 3 0 0 1 3 3 v0 a3 3 0 0 1 -3 3 h-18 z"
+          fill="url(#brand-steel)"
+          stroke="hsl(20 14% 14%)"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M11 19 a5 5 0 0 0 0 12 l0 -3 a3 3 0 0 1 0 -6 z"
+          fill="url(#brand-steel)"
+          stroke="hsl(20 14% 14%)"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+      </g>
     </svg>
   );
 }
