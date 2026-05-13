@@ -342,6 +342,49 @@ function Index() {
         </div>
       </section>
 
+      {/* TESTIMONIOS */}
+      <section className="mx-auto max-w-7xl px-4 py-20 md:px-8">
+        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary">Opiniones de clientes</p>
+            <h2 className="mt-2 font-display text-4xl md:text-5xl">Lo que dicen quienes ya nos han llamado.</h2>
+            <p className="mt-4 text-muted-foreground">Más de 15 años reparando electrodomésticos en Valencia y miles de hogares satisfechos. Estas son algunas de las valoraciones reales de nuestros clientes.</p>
+          </div>
+          <div className="flex items-center gap-4 rounded-2xl border border-border bg-card px-5 py-4 shadow-soft">
+            <div className="flex flex-col">
+              <span className="font-display text-3xl text-primary">4,9 / 5</span>
+              <span className="text-xs text-muted-foreground">Media de valoraciones</span>
+            </div>
+            <div className="flex flex-col items-start">
+              <div className="flex gap-0.5">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <span className="mt-1 text-xs text-muted-foreground">+800 reparaciones / año</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {TESTIMONIALS.map((t) => (
+            <article key={t.name} className="relative flex flex-col rounded-3xl border border-border bg-card p-7 shadow-soft transition hover:shadow-elegant">
+              <Quote className="absolute right-6 top-6 h-8 w-8 text-primary/15" />
+              <div className="flex gap-0.5">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-foreground/90">"{t.text}"</p>
+              <div className="mt-6 border-t border-border pt-4">
+                <p className="font-display text-lg leading-tight">{t.name}</p>
+                <p className="text-xs text-muted-foreground">{t.location} · {t.service}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-4 pb-10 md:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-sunset px-6 py-14 text-center text-primary-foreground md:px-16 md:py-20">
