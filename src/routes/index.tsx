@@ -307,9 +307,9 @@ function Index() {
       <section className="mx-auto max-w-7xl px-4 pb-10 md:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-sunset px-6 py-14 text-center text-primary-foreground md:px-16 md:py-20">
           <h2 className="mx-auto max-w-2xl font-display text-4xl md:text-5xl">¿Tu electrodoméstico ha fallado?</h2>
-          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/85">Cuéntanos qué ocurre y un técnico te atenderá hoy mismo. Presupuesto sin compromiso.</p>
+          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/85">Cuéntanos qué ocurre y un técnico se desplazará hoy mismo a tu domicilio para diagnosticar la avería. <strong>Si aceptas la reparación, el desplazamiento y el diagnóstico son gratis.</strong> Si no la aceptas, solo se cobra una pequeña tarifa por el desplazamiento y diagnóstico.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link to="/contacto" className="rounded-full bg-background px-6 py-3.5 font-semibold text-foreground shadow-elegant">Pedir presupuesto</Link>
+            <Link to="/contacto" className="rounded-full bg-background px-6 py-3.5 font-semibold text-foreground shadow-elegant">Solicitar diagnóstico</Link>
             <a href={SITE.phoneHref} className="rounded-full border border-primary-foreground/40 px-6 py-3.5 font-semibold text-primary-foreground hover:bg-primary-foreground/10">Llamar ahora</a>
           </div>
         </div>
