@@ -8,39 +8,40 @@ const COPY: Record<string, { intro: string; bullets: string[]; brands: string[] 
   lavadoras: {
     intro: "Reparamos lavadoras de carga frontal y superior de todas las marcas. Solucionamos fugas, problemas de centrifugado, desagüe, ruidos, errores electrónicos y cambio de rodamientos.",
     bullets: ["No carga ni descarga agua", "No centrifuga o hace ruido", "Error en el display", "Goteos y fugas", "Cambio de rodamientos y correa"],
-    brands: ["Bosch", "Balay", "Siemens", "LG", "Samsung", "Whirlpool", "AEG", "Beko"],
+    brands: ["Bosch", "Balay", "Siemens", "LG", "Samsung", "Whirlpool", "AEG", "Beko", "Bauknecht", "Candy", "Hoover", "Indesit", "Hotpoint", "Zanussi", "Electrolux", "Edesa", "Fagor", "Aspes", "Otsein", "Lynx", "New Pol", "Daewoo", "Haier", "Hisense", "Miele", "Smeg", "Teka"],
   },
   lavavajillas: {
     intro: "Servicio técnico de lavavajillas: bombas de desagüe, resistencias, electroválvulas, filtros y módulos electrónicos. Lo dejamos lavando como el primer día.",
     bullets: ["No coge agua o no calienta", "Vajilla con restos", "Fugas o malos olores", "Error en el panel", "Cambio de bomba y filtros"],
-    brands: ["Bosch", "Balay", "Siemens", "Fagor", "Teka", "Smeg", "Indesit"],
+    brands: ["Bosch", "Balay", "Siemens", "Fagor", "Teka", "Smeg", "Indesit", "Hotpoint", "AEG", "Electrolux", "Zanussi", "Whirlpool", "Bauknecht", "Beko", "Candy", "Hoover", "LG", "Samsung", "Edesa", "Aspes", "Miele", "Neff"],
   },
   frigorificos: {
     intro: "Reparación de frigoríficos y congeladores: combis, americanos, no frost y de una puerta. Recargas de gas, cambio de termostato, motor y resistencias de descongelación.",
     bullets: ["No enfría o enfría poco", "Hace escarcha en exceso", "Hace ruido o vibra", "Pierde agua", "Cambio de motor o termostato"],
-    brands: ["Liebherr", "Bosch", "LG", "Samsung", "Hisense", "Beko", "Balay"],
+    brands: ["Liebherr", "Bosch", "Balay", "Siemens", "LG", "Samsung", "Hisense", "Beko", "Whirlpool", "AEG", "Electrolux", "Zanussi", "Indesit", "Hotpoint", "Candy", "Hoover", "Bauknecht", "Fagor", "Edesa", "Aspes", "Haier", "Daewoo", "Smeg", "Teka", "Miele"],
   },
   hornos: {
     intro: "Reparación de hornos eléctricos encastrables y de sobremesa. Cambiamos resistencias, ventiladores, programadores y mandos.",
     bullets: ["No calienta o calienta mal", "El ventilador no funciona", "Mandos rotos", "Puerta o bisagras", "Programador electrónico"],
-    brands: ["Bosch", "Balay", "Teka", "Siemens", "Whirlpool", "AEG"],
+    brands: ["Bosch", "Balay", "Teka", "Siemens", "Whirlpool", "AEG", "Electrolux", "Zanussi", "Fagor", "Edesa", "Smeg", "Neff", "Bauknecht", "Indesit", "Hotpoint", "Candy", "Hoover", "Beko", "LG", "Samsung", "Miele", "Aspes"],
   },
   cocinas: {
     intro: "Servicio técnico para cocinas eléctricas, vitrocerámicas, de inducción y a gas. Cambio de zonas de calor, mandos, módulos y reparación de inyectores.",
     bullets: ["Vitro o inducción que no enciende", "Quemador de gas con fallo", "Cristal roto", "Mandos sueltos o rotos", "Conversión de gas natural a butano"],
-    brands: ["Teka", "Bosch", "Balay", "Siemens", "Smeg", "Fagor"],
+    brands: ["Teka", "Bosch", "Balay", "Siemens", "Smeg", "Fagor", "AEG", "Electrolux", "Zanussi", "Whirlpool", "Bauknecht", "Indesit", "Hotpoint", "Candy", "Hoover", "Beko", "Edesa", "Aspes", "Cata", "Neff", "LG", "Samsung"],
   },
   termos: {
     intro: "Reparación e instalación de termos eléctricos y calentadores a gas. Cambio de resistencia, ánodo de magnesio, termostato y descalcificación completa.",
     bullets: ["No sale agua caliente", "Salta el térmico", "Goteos en el termo", "Calentador con fallo de encendido", "Cambio de resistencia y ánodo"],
-    brands: ["Junkers", "Cointra", "Saunier Duval", "Ariston", "Vaillant", "Bosch"],
+    brands: ["Junkers", "Cointra", "Saunier Duval", "Ariston", "Vaillant", "Bosch", "Fagor", "Fleck", "Edesa", "Cabel", "Thermor", "Aparici", "Beretta", "Ferroli", "Baxi", "Chaffoteaux", "Neckar", "Forcali", "Teka"],
   },
   "aire-acondicionado": {
     intro: "Mantenimiento, limpieza y reparación de aire acondicionado split, multisplit y conductos en Valencia. Recarga de gas, limpieza de filtros y unidades, revisión de fugas y puesta a punto antes del verano.",
     bullets: ["Mantenimiento anual y limpieza profunda", "Recarga y detección de fugas de gas", "No enfría o no calienta", "Goteos en la unidad interior", "Ruidos, malos olores o error en el mando"],
-    brands: ["Daikin", "Mitsubishi", "Fujitsu", "LG", "Samsung", "Panasonic", "Hisense", "Hitachi"],
+    brands: ["Daikin", "Mitsubishi", "Fujitsu", "LG", "Samsung", "Panasonic", "Hisense", "Hitachi", "Toshiba", "Hyundai", "Haier", "Bosch", "Balay", "Saunier Duval", "Airwell", "Carrier", "Johnson", "Midea", "Gree", "TCL", "Electrolux", "AEG", "Beko"],
   },
 };
+
 
 export const Route = createFileRoute("/servicios/$slug")({
   head: ({ params }) => {
@@ -112,11 +113,13 @@ function ServicePage() {
             ))}
           </ul>
 
-          <h3 className="mt-10 font-display text-2xl">Marcas con las que trabajamos</h3>
+          <h3 className="mt-10 font-display text-2xl">Servicio técnico multimarca</h3>
+          <p className="mt-2 text-sm text-muted-foreground">Trabajamos con todas las marcas del mercado. Estas son algunas de las más habituales, pero <strong>si tu marca no aparece, también la reparamos</strong>: somos un servicio técnico multimarca independiente.</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {copy.brands.map((b) => (
               <span key={b} className="rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground">{b}</span>
             ))}
+            <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary">y muchas más…</span>
           </div>
         </div>
 
