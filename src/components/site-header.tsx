@@ -18,7 +18,7 @@ export function SiteHeader() {
           <span className="font-display text-lg font-semibold tracking-tight leading-none">
             TecniCB <span className="text-primary">Hogar</span>
             <span className="block text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground mt-0.5">
-              Servicio técnico · Valencia
+              Servicio técnico
             </span>
           </span>
         </Link>
