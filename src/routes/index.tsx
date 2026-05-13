@@ -6,7 +6,46 @@ import pasoPresupuestoImg from "@/assets/paso-presupuesto.jpg";
 import pasoReparacionImg from "@/assets/paso-reparacion.jpg";
 import { SERVICES, SITE } from "@/lib/site";
 import { ServiceImage } from "@/components/service-image";
-import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldCheck, Sparkles, Wrench } from "lucide-react";
+import { ArrowRight, BadgeCheck, Clock, Info, PhoneCall, ClipboardCheck, ShieldCheck, Sparkles, Star, Quote, Wrench } from "lucide-react";
+
+const TESTIMONIALS = [
+  {
+    name: "María G.",
+    location: "Valencia (Ruzafa)",
+    service: "Lavadora Bosch",
+    text: "Vinieron el mismo día que llamé. El técnico fue muy amable, me explicó todo con detalle y dejó la lavadora como nueva. El precio justo y con garantía por escrito. Repetiré sin dudarlo.",
+  },
+  {
+    name: "Javier P.",
+    location: "Torrent",
+    service: "Frigorífico LG",
+    text: "Pensaba que tendría que comprar un frigorífico nuevo y al final lo arreglaron en una hora. Profesionales de verdad, honestos y muy rápidos. 100% recomendable.",
+  },
+  {
+    name: "Carmen R.",
+    location: "Paterna",
+    service: "Horno Balay",
+    text: "Excelente servicio. Puntuales, limpios y muy profesionales. Me dieron el presupuesto antes de tocar nada y respetaron el precio. Una empresa seria.",
+  },
+  {
+    name: "Andrés M.",
+    location: "Xàtiva",
+    service: "Termo eléctrico",
+    text: "Sin agua caliente un sábado por la mañana y vinieron en pocas horas. Solucionado al momento. Trato muy cercano y precio razonable. Gracias TecniCB.",
+  },
+  {
+    name: "Lucía V.",
+    location: "Mislata",
+    service: "Lavavajillas Siemens",
+    text: "Llevaba semanas con el lavavajillas estropeado y otros técnicos no daban con el problema. Ellos lo detectaron en 10 minutos. Muy contentos con el resultado.",
+  },
+  {
+    name: "Rafael S.",
+    location: "Burjassot",
+    service: "Vitrocerámica",
+    text: "Atención de 10. Te tratan con cariño, te explican qué tiene el aparato y deciden contigo. Sin presiones. Es difícil encontrar un servicio técnico tan honesto.",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
