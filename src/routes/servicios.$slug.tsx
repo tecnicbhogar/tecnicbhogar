@@ -113,11 +113,13 @@ function ServicePage() {
             ))}
           </ul>
 
-          <h3 className="mt-10 font-display text-2xl">Marcas con las que trabajamos</h3>
+          <h3 className="mt-10 font-display text-2xl">Servicio técnico multimarca</h3>
+          <p className="mt-2 text-sm text-muted-foreground">Trabajamos con todas las marcas del mercado. Estas son algunas de las más habituales, pero <strong>si tu marca no aparece, también la reparamos</strong>: somos un servicio técnico multimarca independiente.</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {copy.brands.map((b) => (
               <span key={b} className="rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground">{b}</span>
             ))}
+            <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary">y muchas más…</span>
           </div>
         </div>
 
