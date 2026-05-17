@@ -6,20 +6,17 @@ export const SITE = {
   whatsappHref:
     "https://wa.me/34641897997?text=" +
     encodeURIComponent(
-      "Hola TecniCB Hogar 👋, quiero solicitar una reparación.\n\n" +
-        "1) ¿Qué aparato desea reparar? (responda con el número)\n" +
-        "  1. Lavadora\n" +
-        "  2. Lavavajillas\n" +
-        "  3. Frigorífico\n" +
-        "  4. Horno eléctrico\n" +
-        "  5. Cocina / Vitrocerámica / Inducción\n" +
-        "  6. Termo / Calentador\n" +
-        "  7. Aire acondicionado\n\n" +
-        "2) ¿Qué avería tiene? \n" +
-        "3) Marca del aparato: \n" +
-        "4) Antigüedad aproximada: \n" +
-        "5) Población / Zona de Valencia: \n\n" +
-        "Gracias. En cuanto reciba sus datos, le redirigiré con un técnico para coordinar el horario de visita.",
+      "Hola TecniCB Hogar 👋, me gustaría solicitar una visita técnica a domicilio.\n\n" +
+        "Para agilizar la gestión, le facilito mis datos:\n\n" +
+        "• Nombre: \n" +
+        "• Teléfono: \n" +
+        "• Población / Zona: \n" +
+        "• Aparato a reparar: (lavadora, lavavajillas, frigorífico, horno, cocina, termo o aire acondicionado)\n" +
+        "• Marca y modelo (si lo conoce): \n" +
+        "• Antigüedad aproximada: \n" +
+        "• Avería o síntomas que presenta: \n\n" +
+        "Entiendo cómo funciona el servicio: el técnico se desplaza, revisa el aparato y me entrega un presupuesto por escrito. Si acepto la reparación, el desplazamiento y el diagnóstico están incluidos; si no la acepto, solo abono el desplazamiento y diagnóstico.\n\n" +
+        "Quedo a la espera de que me confirmen día y hora de visita. Muchas gracias.",
     ),
   email: "info@tecnicbhogar.es",
   area: "Valencia y alrededores (radio 40 km, incluido Xàtiva)",
