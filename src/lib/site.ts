@@ -6,17 +6,9 @@ export const SITE = {
   whatsappHref:
     "https://wa.me/34641897997?text=" +
     encodeURIComponent(
-      "Hola TecniCB Hogar 👋, me gustaría solicitar una visita técnica a domicilio.\n\n" +
-        "Para agilizar la gestión, le facilito mis datos:\n\n" +
-        "• Nombre: \n" +
-        "• Teléfono: \n" +
-        "• Población / Zona: \n" +
-        "• Aparato a reparar: (lavadora, lavavajillas, frigorífico, horno, cocina, termo o aire acondicionado)\n" +
-        "• Marca y modelo (si lo conoce): \n" +
-        "• Antigüedad aproximada: \n" +
-        "• Avería o síntomas que presenta: \n\n" +
-        "Entiendo cómo funciona el servicio: el técnico se desplaza, revisa el aparato y me entrega un presupuesto por escrito. Si acepto la reparación, el desplazamiento y el diagnóstico están incluidos; si no la acepto, solo abono el desplazamiento y diagnóstico.\n\n" +
-        "Quedo a la espera de que me confirmen día y hora de visita. Muchas gracias.",
+      "¡Hola TecniCB Hogar! 👋\n\n" +
+        "• Aparato averiado: \n" +
+        "• Avería: ",
     ),
   email: "info@tecnicbhogar.es",
   area: "Valencia y alrededores (radio 40 km, incluido Xàtiva)",
