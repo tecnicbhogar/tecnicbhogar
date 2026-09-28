@@ -72,7 +72,8 @@ export const Route = createFileRoute("/servicios/$slug")({
 });
 
 function ServicePage() {
-  const { service } = Route.useLoaderData();
+  const { slug } = Route.useParams();
+  const service = SERVICES.find((x) => x.slug === slug)!;
   const copy = COPY[service.slug];
 
   return (
