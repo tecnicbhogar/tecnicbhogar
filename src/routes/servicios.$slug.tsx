@@ -61,7 +61,7 @@ export const Route = createFileRoute("/servicios/$slug")({
     if (!service) throw notFound();
     return { service };
   },
-  errorComponent: ({ error }) => <div className="p-12 text-center">{error.message}</div>,
+  errorComponent: ({ error }) => <div className="p-12 text-center">{error instanceof Error ? error.message : "Error"}</div>,
   notFoundComponent: () => (
     <div className="mx-auto max-w-xl px-4 py-24 text-center">
       <h1 className="font-display text-4xl">Servicio no encontrado</h1>
