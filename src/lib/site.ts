@@ -1,10 +1,10 @@
 export const SITE = {
   name: "TecniCB Hogar",
-  phone: "+34 641 897 997",
-  phoneHref: "tel:+34641897997",
-  whatsappNumber: "34641897997",
+  phone: "+34 672 304 866",
+  phoneHref: "tel:+34672304866",
+  whatsappNumber: "34672304866",
   whatsappHref:
-    "https://wa.me/34641897997?text=" +
+    "https://wa.me/34672304866?text=" +
     encodeURIComponent(
       "¡Hola TecniCB Hogar! 👋\n\n" +
         "• Aparato averiado: \n" +
