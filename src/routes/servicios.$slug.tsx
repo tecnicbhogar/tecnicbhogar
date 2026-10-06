@@ -26,14 +26,19 @@ const COPY: Record<string, { intro: string; bullets: string[]; brands: string[] 
     brands: ["Bosch", "Balay", "Teka", "Siemens", "Whirlpool", "AEG", "Electrolux", "Zanussi", "Fagor", "Edesa", "Smeg", "Neff", "Bauknecht", "Indesit", "Hotpoint", "Candy", "Hoover", "Beko", "LG", "Samsung", "Miele", "Aspes"],
   },
   cocinas: {
-    intro: "Servicio técnico para cocinas eléctricas, vitrocerámicas, de inducción y a gas. Cambio de zonas de calor, mandos, módulos y reparación de inyectores.",
-    bullets: ["Vitro o inducción que no enciende", "Quemador de gas con fallo", "Cristal roto", "Mandos sueltos o rotos", "Conversión de gas natural a butano"],
+    intro: "Servicio técnico para cocinas eléctricas, vitrocerámicas, de inducción y a gas, y hornos eléctricos. Cambio de zonas de calor, resistencias, ventiladores, mandos y módulos.",
+    bullets: ["Vitro o inducción que no enciende", "El horno no calienta", "Quemador de gas con fallo", "Ventilador o programador del horno", "Mandos sueltos o rotos"],
     brands: ["Teka", "Bosch", "Balay", "Siemens", "Smeg", "Fagor", "AEG", "Electrolux", "Zanussi", "Whirlpool", "Bauknecht", "Indesit", "Hotpoint", "Candy", "Hoover", "Beko", "Edesa", "Aspes", "Cata", "Neff", "LG", "Samsung"],
   },
   termos: {
-    intro: "Reparación e instalación de termos eléctricos y calentadores a gas. Cambio de resistencia, ánodo de magnesio, termostato y descalcificación completa.",
-    bullets: ["No sale agua caliente", "Salta el térmico", "Goteos en el termo", "Calentador con fallo de encendido", "Cambio de resistencia y ánodo"],
-    brands: ["Junkers", "Cointra", "Saunier Duval", "Ariston", "Vaillant", "Bosch", "Fagor", "Fleck", "Edesa", "Cabel", "Thermor", "Aparici", "Beretta", "Ferroli", "Baxi", "Chaffoteaux", "Neckar", "Forcali", "Teka"],
+    intro: "Reparación e instalación de termos eléctricos. Cambio de resistencia, ánodo de magnesio, termostato y descalcificación completa.",
+    bullets: ["No sale agua caliente", "Salta el térmico", "Goteos en el termo", "Tarda mucho en calentar", "Cambio de resistencia y ánodo"],
+    brands: ["Ariston", "Thermor", "Fleck", "Junkers", "Cointra", "Fagor", "Edesa", "Cabel", "Aparici", "Bosch", "Teka", "Chaffoteaux", "Neckar", "Forcali"],
+  },
+  calentadores: {
+    intro: "Reparación y mantenimiento de calentadores y calderas de gas. Fallos de encendido, pérdida de presión, revisión de quemadores, válvulas y placas electrónicas.",
+    bullets: ["El calentador no enciende", "La caldera pierde presión", "Agua caliente intermitente", "Error en el panel", "Revisión y mantenimiento"],
+    brands: ["Junkers", "Vaillant", "Saunier Duval", "Baxi", "Ferroli", "Beretta", "Cointra", "Ariston", "Chaffoteaux", "Bosch", "Fagor", "Roca", "Domusa", "Manaut", "Immergas"],
   },
   "aire-acondicionado": {
     intro: "Mantenimiento, limpieza y reparación de aire acondicionado split, multisplit y conductos en Valencia. Recarga de gas, limpieza de filtros y unidades, revisión de fugas y puesta a punto antes del verano.",
