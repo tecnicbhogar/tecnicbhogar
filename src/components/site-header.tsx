@@ -1,20 +1,20 @@
 import { Link } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
-import logoAsset from "@/assets/logo-tecnicb-hogar.jpeg.asset.json";
+import logoAsset from "@/assets/logo-tecnicb-hogar-v2.jpeg.asset.json";
 const logoUrl = logoAsset.url;
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
-        <Link to="/" className="flex items-center gap-2.5">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 md:px-8">
+        <Link to="/" className="flex items-center gap-3">
           <img
             src={logoUrl}
             alt="TecniCB Hogar — Reparación de electrodomésticos en Valencia"
-            width={48}
-            height={48}
-            className="h-12 w-12 rounded-full shadow-soft"
+            width={88}
+            height={88}
+            className="h-[68px] w-[68px] shrink-0 rounded-full bg-white ring-1 ring-black/5 shadow-soft md:h-[86px] md:w-[86px]"
           />
           <span className="font-display text-lg font-semibold tracking-tight leading-none">
             TecniCB <span className="text-primary">Hogar</span>
