@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { SITE, SERVICES } from "@/lib/site";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logoAsset from "@/assets/logo-tecnicb-hogar-v2.jpeg.asset.json";
+const logoUrl = logoAsset.url;
 
 export function SiteFooter() {
   return (
