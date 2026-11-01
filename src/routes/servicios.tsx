@@ -6,8 +6,12 @@ import { ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/servicios")({
   head: () => ({
     meta: [
-      { title: "Servicios · Reparación de electrodomésticos en Valencia" },
+      { title: "Servicios · TecniCB Hogar Valencia" },
       { name: "description", content: "Reparamos lavadoras, lavavajillas, frigoríficos, hornos, cocinas, termos y calentadores en Valencia y alrededores." },
+      { property: "og:title", content: "Servicios · TecniCB Hogar Valencia" },
+      { property: "og:description", content: "Reparación de electrodomésticos y mantenimiento de aire acondicionado en Valencia y alrededores." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ServicesLayout,

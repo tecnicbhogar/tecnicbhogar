@@ -6,10 +6,12 @@ import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto · ReparaHogar Valencia" },
-      { name: "description", content: "Contacta con ReparaHogar Valencia. Teléfono, WhatsApp, email y formulario para reparar tu electrodoméstico." },
-      { property: "og:title", content: "Contacto · ReparaHogar Valencia" },
-      { property: "og:description", content: "Pide tu presupuesto gratis por teléfono, WhatsApp o formulario." },
+      { title: "Contacto · TecniCB Hogar Valencia" },
+      { name: "description", content: "Contacta con TecniCB Hogar en Valencia por teléfono, WhatsApp o formulario para solicitar una visita técnica." },
+      { property: "og:title", content: "Contacto · TecniCB Hogar Valencia" },
+      { property: "og:description", content: "Solicita una visita técnica en Valencia y alrededores por teléfono, WhatsApp o formulario." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Contacto,

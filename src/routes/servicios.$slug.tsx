@@ -54,10 +54,12 @@ export const Route = createFileRoute("/servicios/$slug")({
     if (!s) return { meta: [{ title: "Servicio no encontrado" }] };
     return {
       meta: [
-        { title: `Reparación de ${s.title.toLowerCase()} en Valencia · ReparaHogar` },
+        { title: `Reparación de ${s.title.toLowerCase()} en Valencia · TecniCB Hogar` },
         { name: "description", content: `Servicio técnico de ${s.title.toLowerCase()} en Valencia y alrededores. ${s.short}. Presupuesto gratis y garantía.` },
         { property: "og:title", content: `Reparación de ${s.title.toLowerCase()} en Valencia` },
         { property: "og:description", content: `${s.short}. Servicio rápido en Valencia y alrededores.` },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
     };
   },
