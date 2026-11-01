@@ -7,9 +7,8 @@ export function WhatsappFab() {
       target="_blank"
       rel="noopener"
       aria-label="Contactar por WhatsApp"
-      className="fixed bottom-24 right-5 z-50 flex items-center gap-2 rounded-full bg-[var(--color-whatsapp)] px-4 py-3 text-white shadow-elegant transition hover:scale-105 sm:bottom-28"
+      className="fixed bottom-24 right-4 z-50 flex items-center gap-2 rounded-full bg-[var(--color-whatsapp)] p-3.5 text-white shadow-elegant transition hover:scale-105 sm:bottom-28 sm:right-5 sm:px-4 sm:py-3"
     >
-      <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[var(--color-whatsapp)] opacity-40" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"

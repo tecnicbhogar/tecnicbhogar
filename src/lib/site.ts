@@ -19,7 +19,7 @@ export const SERVICES = [
   { slug: "frigorificos", title: "Frigoríficos", short: "Frío, motor y termostato", img: "frigorifico" },
   { slug: "aire-acondicionado", title: "Aire acondicionado", short: "Mantenimiento, recarga y limpieza", img: "aireAcondicionado" },
   { slug: "termos", title: "Termos eléctricos", short: "Resistencia, ánodo y termostato", img: "termo" },
-  { slug: "calentadores", title: "Calentadores y calderas", short: "Encendido, presión y agua caliente", img: "termo" },
+  { slug: "calentadores", title: "Calentadores y calderas", short: "Encendido, presión y agua caliente", img: "calentadores" },
   { slug: "lavavajillas", title: "Lavavajillas", short: "Bombas, resistencias y filtros", img: "lavavajillas" },
   { slug: "cocinas", title: "Cocinas y hornos eléctricos", short: "Vitro, inducción, gas y hornos", img: "cocina" },
 ] as const;

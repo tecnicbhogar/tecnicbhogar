@@ -4,9 +4,19 @@ import frigorifico from "@/assets/frigorifico.jpg";
 import horno from "@/assets/horno.jpg";
 import cocina from "@/assets/cocina.jpg";
 import termo from "@/assets/termo.jpg";
+import calentadores from "@/assets/calentadores.jpg";
 import aireAcondicionado from "@/assets/aire-acondicionado.jpg";
 
-const map: Record<string, string> = { lavadora, lavavajillas, frigorifico, horno, cocina, termo, aireAcondicionado };
+const map: Record<string, string> = {
+  lavadora,
+  lavavajillas,
+  frigorifico,
+  horno,
+  cocina,
+  termo,
+  calentadores,
+  aireAcondicionado,
+};
 
 export function ServiceImage({ name, alt, className }: { name: string; alt: string; className?: string }) {
   return <img src={map[name]} alt={alt} loading="lazy" className={className} />;
