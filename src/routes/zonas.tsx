@@ -7,6 +7,10 @@ export const Route = createFileRoute("/zonas")({
     meta: [
       { title: "Zonas de actuación · TecniCB Hogar" },
       { name: "description", content: "Servicio técnico de electrodomésticos en Valencia y alrededores en un radio de 40 km, incluido Xàtiva." },
+      { property: "og:title", content: "Zonas de actuación · TecniCB Hogar" },
+      { property: "og:description", content: "Servicio técnico a domicilio en Valencia y alrededores, incluido Xàtiva." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Zonas,

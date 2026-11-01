@@ -14,8 +14,7 @@ export function SiteFooter() {
             alt="TecniCB Hogar — Reparación de electrodomésticos en Valencia"
             width={104}
             height={104}
-            className="h-26 w-26 rounded-full bg-white p-1 ring-1 ring-white/15 shadow-soft"
-            style={{ width: "104px", height: "104px" }}
+            className="block h-[104px] w-[104px] object-contain"
           />
           <h3 className="mt-4 font-display text-2xl">TecniCB Hogar</h3>
           <p className="mt-3 text-sm opacity-70">Servicio técnico de electrodomésticos rápido, garantizado y de proximidad en {SITE.area}.</p>

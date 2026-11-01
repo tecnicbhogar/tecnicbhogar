@@ -18,23 +18,23 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 md:px-8">
-        <Link to="/" onClick={() => setOpen(false)} className="flex items-center gap-3">
+        <Link to="/" onClick={() => setOpen(false)} className="flex min-w-0 items-center gap-2.5 sm:gap-3">
           <img
             src={logoUrl}
             alt="TecniCB Hogar — Reparación de electrodomésticos en Valencia"
-            width={88}
-            height={88}
-            className="h-[68px] w-[68px] shrink-0 rounded-full bg-white ring-1 ring-black/5 shadow-soft md:h-[86px] md:w-[86px]"
+            width={72}
+            height={72}
+            className="block h-16 w-16 shrink-0 object-contain p-1 md:h-[72px] md:w-[72px]"
           />
-          <span className="font-display text-lg font-semibold tracking-tight leading-none">
+          <span className="min-w-0 font-sans text-base font-semibold leading-snug tracking-normal sm:text-lg">
             TecniCB <span className="text-primary">Hogar</span>
-            <span className="block text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground mt-0.5">
+            <span className="mt-0.5 block text-xs font-normal tracking-normal text-muted-foreground">
               Servicio técnico
             </span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
+        <nav className="hidden items-center gap-4 text-sm font-medium md:flex lg:gap-7">
           {NAV.map((n) => (
             <Link
               key={n.to}
