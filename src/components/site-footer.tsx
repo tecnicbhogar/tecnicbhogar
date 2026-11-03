@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { SITE, SERVICES } from "@/lib/site";
 import { Mail, Phone, MapPin } from "lucide-react";
-import logoAsset from "@/assets/logo-tecnicb-hogar-circular.jpeg.asset.json";
-const logoUrl = logoAsset.url;
+import logoUrl from "@/assets/logo-completo.jpg";
 
 export function SiteFooter() {
   return (
@@ -12,9 +11,9 @@ export function SiteFooter() {
           <img
             src={logoUrl}
             alt="TecniCB Hogar — Reparación de electrodomésticos en Valencia"
-            width={104}
-            height={104}
-            className="block h-[104px] w-[104px] object-contain"
+            width={160}
+            height={160}
+            className="block h-40 w-40 rounded-full bg-card object-contain"
           />
           <h3 className="mt-4 font-display text-2xl">TecniCB Hogar</h3>
           <p className="mt-3 text-sm opacity-70">Servicio técnico de electrodomésticos rápido, garantizado y de proximidad en {SITE.area}.</p>
