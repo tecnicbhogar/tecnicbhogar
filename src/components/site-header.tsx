@@ -15,7 +15,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 shadow-soft backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 md:px-8">
         <Link to="/" onClick={() => setOpen(false)} className="flex min-w-0 items-center gap-2.5 sm:gap-3">
           <img
@@ -40,7 +40,7 @@ export function SiteHeader() {
               to={n.to}
               activeOptions={{ exact: n.exact }}
               activeProps={{ className: "text-primary" }}
-              className="hover:text-primary"
+              className="relative py-1 transition-colors hover:text-primary"
             >
               {n.label}
             </Link>
