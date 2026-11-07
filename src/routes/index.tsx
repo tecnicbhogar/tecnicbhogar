@@ -66,7 +66,7 @@ export const Route = createFileRoute("/")({
     ],
     scripts: [
       {
-        src: "https://www.googletagmanager.com/gtm.js?id=GTM-M29K2VJH",
+        src: "https://www.googletagmanager.com/gtm.js?id=GTM-PV4C3W57",
         async: true,
       },
       {
